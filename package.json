@@ -1,0 +1,16 @@
+{
+  "name": "automation-dbc",
+  "description": "automation for dbc challenge ",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "cypress": "^12.17.4",
+    "cypress-plugin-api": "^2.11.1"
+  },
+  "scripts": {
+    "test": "npx cypress run"
+
+  },
+  "author": "Joao victor Jacinto",
+  "license": "ISC"
+}

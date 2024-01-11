@@ -1,0 +1,23 @@
+
+stages:
+  - build
+  - test
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .npm
+    - cache/Cypress
+    - node_modules
+
+install:
+  image: cypress/base:latest
+  stage: build
+
+  script:
+    - npm ci
+    - npm run cy:verify
+    - npm run cy:info
+    - npm cy:run
+
+
